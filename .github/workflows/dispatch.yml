@@ -1,0 +1,18 @@
+# https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+name: Manuall dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      yourname:
+        description: "Add your name"
+        required: true
+        default: "Donkeykong"
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    name: Say hello to you
+    steps:
+      - name: Run the command
+        run: echo "Hello ${{ github.event.inputs.yourname }}"

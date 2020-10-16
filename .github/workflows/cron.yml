@@ -1,0 +1,15 @@
+name: Cronjob
+env:
+  NAME: Donkeykong
+on:
+  schedule:
+    # every hour
+    # https://crontab.guru/#0_*_*_*_*
+    - cron: "0 * * * *"
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    name: Say hello to you
+    steps:
+      - name: Prepare it
+        run: echo "Hello $DONKEYKONG"
