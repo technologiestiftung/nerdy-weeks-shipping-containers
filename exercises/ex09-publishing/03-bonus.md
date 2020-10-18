@@ -1,6 +1,5 @@
 # Exercise 9 Publishing
 
-
 ## GitHub Container Registry (GHCR)
 
 ### Build and Push
