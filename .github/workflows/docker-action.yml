@@ -1,7 +1,9 @@
 # https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action
 name: Docker Action
+
 on:
   workflow_dispatch:
+
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
@@ -11,6 +13,11 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: ./final/ex10 # Uses an action in this repo
-        id: hello
+        #  Uses an action in this repo
+      - name: local docker action step
+        uses: exercises/ex10-github-docker-action
+        id: yeah
+        with:
+          in: jippy
+      - name: get the output
+        run: echo "The output of the last script was ${{steps.yeah.outputs.out }}"

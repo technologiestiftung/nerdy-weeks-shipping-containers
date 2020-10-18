@@ -1,0 +1,14 @@
+# action.yml
+name: "Hello World Github Docker Action"
+description: "runs some python script"
+inputs:
+  in: # id of input
+    description: "input for the script"
+    required: true
+    default: "yiiihaa"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.in }}
