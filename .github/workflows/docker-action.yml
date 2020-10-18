@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
         #  Uses an action in this repo
       - name: local docker action step
-        uses: exercises/ex10-github-docker-action
+        uses: ./exercises/ex10-github-docker-action/
         id: yeah
         with:
           in: jippy
