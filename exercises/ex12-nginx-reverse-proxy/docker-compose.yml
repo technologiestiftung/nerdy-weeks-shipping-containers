@@ -1,0 +1,25 @@
+version: "3.1"
+services:
+  nginx:
+    restart: always
+    depends_on:
+      - api
+      - client
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - 4000:80
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    volumes:
+      - /usr/app/node_modules
+      - ./api:/usr/app
+  client:
+    depends_on:
+      - api
+    build:
+      context: ./client
+      dockerfile: Dockerfile

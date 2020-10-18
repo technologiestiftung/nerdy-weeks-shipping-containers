@@ -1,0 +1,16 @@
+[tool.poetry]
+authors = ["fabianmoronzirfas <fabianmoronzirfas@protonmail.ch>"]
+description = "demo"
+license = "MIT"
+name = "with-poetry"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+cowsay = "^2.0.3"
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=1.0"]
