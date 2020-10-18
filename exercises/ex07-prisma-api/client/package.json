@@ -14,7 +14,8 @@
     "@types/node": "14.11.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predev": "prisma generate",
+    "dev": "inpyjamas-scripts dev api/index.ts"
   },
   "keywords": [],
   "author": "Fabian Morón Zirfas <fabianmoronzirfas@protonmail.ch> (https://fabianmoronzirfas.me)",

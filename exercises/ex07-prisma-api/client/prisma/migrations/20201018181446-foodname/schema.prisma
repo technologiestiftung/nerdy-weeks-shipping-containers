@@ -3,7 +3,7 @@
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url = "***"
 }
 
 generator client {
@@ -12,6 +12,7 @@ generator client {
 
 model Food {
   id     Int     @id @default(autoincrement())
+  name   String
   fruits Fruit[]
 }
 

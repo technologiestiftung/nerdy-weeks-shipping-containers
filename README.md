@@ -1,3 +1,5 @@
+ <img src="assets/images/nerdy-weeks-containers-768.png">
+
 # Nerdy Weeks - Shipping Containers
 
 ## Prerequisites
@@ -21,7 +23,8 @@ docker --version
 ## Setup
 
 ```bash
-git clone git@github.com:technologiestiftung/nerdy-weeks-delightful-testing.git
-cd nerdy-weeks-delightful-testing
-npx lerna bootstrap
+git clone git@github.com:technologiestiftung/nerdy-weeks-shipping-containers.git
+cd nerdy-weeks-shipping-containers
 ```
+
+You will find details in the folders `./exercises/**`

@@ -8,5 +8,6 @@ services:
       POSTGRES_PASSWORD: mysecretpassword
     # volumes:
     #   - ./db-data:/var/lib/postgresql/data
+    # dont forget to add your ./db-data to .gitignore
     ports:
       - 5432:5432

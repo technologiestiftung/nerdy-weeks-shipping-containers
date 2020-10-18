@@ -1,8 +1,12 @@
 import { Client } from "pg";
+/**
+ * Ups someone left an error in this file. Where can we get the variables for
+ * host, user and password from?
+ */
 const client = new Client({
-  host: process.env.POSTGRES_HOST,
-  user: process.env.POSTGRES_USER,
-  password: process.env.POSTGRES_PASSWORD,
+  host: ,
+  user: ,
+  password:,
 });
 (async () => {
   try {
