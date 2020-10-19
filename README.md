@@ -28,3 +28,12 @@ cd nerdy-weeks-shipping-containers
 ```
 
 You will find details in the folders `./exercises/**`
+
+## Further Readings
+
+- [https://www.docker.com/play-with-docker](https://www.docker.com/play-with-docker)
+- [https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/)
+- [https://cloudberry.engineering/article/dockerfile-security-best-practices/](https://cloudberry.engineering/article/dockerfile-security-best-practices/)
+- [https://github.com/BretFisher/node-docker-good-defaults](https://github.com/BretFisher/node-docker-good-defaults)
+- [https://www.youtube.com/watch?v=Zgx0o8QjJk4](https://www.youtube.com/watch?v=Zgx0o8QjJk4)
+- [https://github.com/goldbergyoni/nodebestpractices#8-docker-best-practices](https://github.com/goldbergyoni/nodebestpractices#8-docker-best-practices)
